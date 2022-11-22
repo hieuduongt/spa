@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/dash-board.css">
+    <link href="https://css.gg/css?=|arrow-left-r|arrow-right-r" rel="stylesheet">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar open" id="side-bar-menu">
+                <div class="side-bar-title">
+                    <div class="side-bar-title-text">
+                        DTH Apllication
+                    </div>
+                    <div>
+                        <div class="side-bar-menu-button" onclick="toggleMenu()">
+                            <div>
+                                <!-- <i class="gg-arrow-left-r" width=" 30px" ></i> -->
+                                <img class="side-bar-menu-icon" src="./resources/left.png" alt="menu">
+                            </div>
+                            <div class="hidden">
+                                <!-- <i class="gg-arrow-right-r"></i> -->
+                                <img class="side-bar-menu-icon" src="./resources/right.png" alt="menu">
+                            </div>
+                            
+                            <!-- <img class="side-bar-menu-icon" src="./resources/   menu.png" alt="menu"> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="side-bar-item active" viewId="dash-board" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/home.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Dashboard</div>
+                </div>
+                <div class="side-bar-item" viewId="charts" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/bar-chart.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Charts</div>
+                </div>
+                <div class="side-bar-item" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/gmail.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Email</div>
+                </div>
+                <div class="side-bar-item" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/contacts-colored.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Contact</div>
+                </div>
+                <div class="side-bar-item" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/comments-colored.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Message</div>
+                </div>
+                <div class="side-bar-item" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/setting-colored.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Setting</div>
+                </div>
+                <div class="side-bar-item" onclick="onItemClick(event)">
+                    <div class="side-bar-item-icon">
+                        <img src="./resources/account-colored.png" alt="item">
+                    </div>
+                    <div class="side-bar-item-text">Account</div>
+                </div>
+        </div>
+        <div id="main-content" class="main-content">
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

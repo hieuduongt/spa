@@ -1,0 +1,27 @@
+.card-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-row: 1;
+    grid-gap: 20px;
+}
+
+.card {
+    display: block;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.card-image > img {
+    width: 180px;
+    height: 180px;
+}
+
+.card-image {
+    padding: 10px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
